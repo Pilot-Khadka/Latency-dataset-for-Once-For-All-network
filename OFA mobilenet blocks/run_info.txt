@@ -1,0 +1,4 @@
+Board: Ultra96v2
+number of runs : 500
+precision: int8
+
