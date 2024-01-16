@@ -7,16 +7,22 @@ This repository provides a latency dataset for Mobilenetv3 blocks within the Onc
 
 To run latency profiling in the FPGA board using Vitis profiler, run:
 
-'python3 -m vaitrace_py <fpga_inference_code.py> <*.xmodel>'
+```
+python3 -m vaitrace_py <fpga_inference_code.py> <*.xmodel>
+```
 
 ### Batch Latency Profiling
 
 To run latency profiling of 10 model simultaneously in the PEtalinux environment:
 1. Grant execute permissions:
 
-'sudo chmod +x search_folder.sh'
+```
+sudo chmod +x search_folder.sh
+```
 
 
 2. Execute the script
 
-'./search_folder.sh'
+```
+./search_folder.sh
+```
