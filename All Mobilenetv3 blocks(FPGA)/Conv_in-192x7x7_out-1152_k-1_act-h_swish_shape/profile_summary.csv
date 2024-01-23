@@ -1,0 +1,12 @@
+Profile Summary
+Generated on: 2021-11-19 17:26:19
+XRT build version: 0.0.0
+Build version branch: N/A
+Build version hash: N/A
+Build version date: N/A
+Target devices: N/A
+
+DPU Summary
+Kernel Name,Number Of Runs,CU Full Name,Minimum Time (ms),Average Time (ms),Maximum Time (ms),Workload(GOP),DPU Performance(GOP/s),Mem IO(MB),Mem Bandwidth(MB/s),
+subgraph_ConvLayer__ConvLayer_Conv2d_conv__ret_3,500,DPUCZDX8G_1:batch-1,0.521,0.525,0.737,0.022,10.075,0.275,584.119,
+

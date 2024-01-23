@@ -8,7 +8,7 @@ if __name__ == "__main__":
     all_latency_data = []
     blocks_list = os.listdir(os.getcwd())
     for block in blocks_list:
-        if block.startswith('R'):
+        if block.startswith('Residual') or block.startswith('Conv') or block.startswith('Linear') :
             latency_data =[]
             file_path = os.path.join(os.getcwd(), block,file_name)
             latency_data.append([block])
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     for block in all_latency_data:
         for item in block:
             for i in item:
-                if i.startswith('Residual'):
+                if i.startswith('Residual') or i.startswith('Conv') or i.startswith('Linear'):
                     block_data.append([i])
                 elif i.startswith('subgraph'):
                     block_data.append(item)
@@ -43,3 +43,4 @@ if __name__ == "__main__":
     df_cleaned = df.dropna()
     # print(df_cleaned)
     df_cleaned.to_csv("cleaned_latency_summary.csv")
+    print("Latency summary generated")
